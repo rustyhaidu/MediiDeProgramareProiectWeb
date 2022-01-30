@@ -38,8 +38,8 @@ namespace MediiDeProgramareProiectWeb.Pages.Cursuri
             {
                 return NotFound();
             }
-           ViewData["AntrenorID"] = new SelectList(_context.Antrenor, "ID", "ID");
-           ViewData["ClientID"] = new SelectList(_context.Client, "ID", "ID");
+           ViewData["AntrenorID"] = new SelectList(_context.Antrenor, "ID", "Nume");
+           ViewData["ClientID"] = new SelectList(_context.Client, "ID", "Nume");
             return Page();
         }
 
